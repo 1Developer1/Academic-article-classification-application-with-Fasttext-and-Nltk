@@ -9,3 +9,7 @@ Home
 
 İnterests
 ![İnterest](https://github.com/1Developer1/Academic-article-classification-application-with-Fasttext-and-Nltk/assets/96293374/41bbdf05-5289-430e-a754-9b16bd88cc4f)
+
+
+
+The application features login, registration, and profile update pages. Users complete membership, log in, and register their demographic information and interests. Based on these, the app recommends 5 articles from the Krapivin academic dataset. Recommendations update according to the user's reading and search history.
