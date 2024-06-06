@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+{% block css %}"{% static 'interests.css' %}"{% endblock css %}
+
+{% block content %}
+<div class="logo-container">
+    <a href="{% url 'logout' %}">LOGOUT</a> 
+</div>
+<form  method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <span>
+            <input class="basic-slide" id="name" type="text" placeholder="Your Username" name="name" /><label for="name">Username</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="email" type="text" placeholder="Your email address" name="email" /><label for="email">Email</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="phone" type="text" placeholder="Your phone number" name="phone" /><label for="phone">Phone</label>
+        </span>
+    </div>
+    <div class="row">
+        <span>
+            <input class="basic-slide" id="age" type="text" placeholder="Your age" name="age" /><label for="age">Age</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="gender" type="text" placeholder="Your gender" name="gender" /><label for="gender">Gender</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="location" type="text" placeholder="Your location" name="location" /><label for="location">Location</label>
+        </span>
+    </div>
+    <div class="row">
+        <span>
+            <input class="basic-slide" id="interest1" type="text" placeholder="Your first interest" name="interest1" /><label for="interest1">Interest 1</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="interest2" type="text" placeholder="Your second interest" name="interest2" /><label for="interest2">Interest 2</label>
+        </span>
+        <span>
+            <input class="basic-slide" id="interest3" type="text" placeholder="Your third interest" name="interest3" /><label for="interest3">Interest 3</label>
+        </span>
+    </div>
+    <div class="row">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+{% endblock content %}
+
